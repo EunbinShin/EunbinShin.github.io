@@ -6,9 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Vanilla JS App 😉</title>
     <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/clock.css">
 </head>
 <body>
-    <h2 id="clock">00:00:00</h2>
+    <div id="geolocation-container"> 
+        <div id="weather-container">
+            <span id="clock">00:00:00</span>
+            <div id="weather">
+                <div id="weather-info">
+                    <img id="weather-icon"/>
+                </div>
+                <div id="temparature">
+                    <span></span>
+                    <span>℃</span>
+                </div>
+            </div>
+        </div>
+        <div id="city-container">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" />
+            <span id="city"></span>
+        </div>
+    </div>
     <form id="login-form" class="hidden">
         <input 
             required
@@ -23,10 +41,7 @@
         <input type="text" placeholder="Write a To Do and Press Enter"/>
     </form>
     <ul id="todo-list"></ul>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+    
     <script src="./src/javascript/background.js"></script>
     <script src="./src/javascript/clock.js"></script>
     <script src="./src/javascript/login.js"></script>

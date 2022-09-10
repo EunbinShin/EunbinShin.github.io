@@ -1,0 +1,72 @@
+#geolocation-container {
+    display: inline-block;
+    background-color: black;
+    padding: 20px;
+}
+
+#weather-container{
+    display: flex;
+}
+
+#weather{
+    display: flex;
+    align-self: flex-end;
+    margin-left: 20px;
+}
+
+#weather-info {
+    align-self:center;
+}
+
+#clock{
+    font-size: 6em;
+    height: 80px;
+    line-height: 80px;
+    width: 350px;
+    
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-weight: bold;
+}
+
+#temparature{
+    display: flex;
+    padding: 0;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+#temparature span{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin-left: 5px;
+    margin: 0;
+}
+
+#temparature span:first-child{
+    font-size: 2em;
+    height: 20px;
+}
+
+#temparature span:last-child{
+    font-size: 1.2em;
+    
+    align-self: flex-start;
+    
+    margin-left: 10px;
+}
+#city-container{
+    margin-top: 20px;
+}
+
+#city-container img{
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
+
+#city{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    font-weight: bold;
+}
