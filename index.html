@@ -8,46 +8,57 @@
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/clock.css">
     <link rel="stylesheet" href="./src/css/login.css">
+    <link rel="stylesheet" href="./src/css/background.css">
+    <link rel="stylesheet" href="./src/css/todo.css">
 </head>
 <body>
-    <div id="geolocation-container"> 
-        <div id="weather-container">
-            <span id="clock">00:00:00</span>
-            <div id="weather">
-                <div id="weather-info">
-                    <img id="weather-icon"/>
+    <div id="main-container">
+        <div id="login-container" class="hidden">
+            <form id="login-form">
+                <div>
+                    <span>Hi,<br/> I want know You</span>
+                    <input 
+                        id="login-input"
+                        required
+                        maxlength="15"
+                        type="text"
+                        placeholder="What is your name?"
+                    />
+                    <input id="login-btn" type="submit" value="Enter ▶"/>
                 </div>
-                <div id="temparature">
-                    <span></span>
-                    <span>℃</span>
+            </form>
+        </div>
+        <div id="image-container" class="hidden">
+            <img id="bk-image"/>
+            <h1 id="greeting"></h1>
+            <button type="button" id="refresh_btn"><img src="https://cdn-icons-png.flaticon.com/512/560/560450.png"/></button>
+        </div>
+        <div id="geolocation-container"> 
+            <div id="weather-container">
+                <span id="clock">00:00:00</span>
+                <div id="weather">
+                    <div id="weather-info">
+                        <img id="weather-icon"/>
+                    </div>
+                    <div id="temparature">
+                        <span></span>
+                        <span>℃</span>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="city-container">
-            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" />
-            <span id="city"></span>
-        </div>
-    </div>
-    <div id="login-container" class="hidden">
-        <form id="login-form">
-            <div>
-                <span>Hi,<br/> I want know You</span>
-                <input 
-                    id="login-input"
-                    required
-                    maxlength="15"
-                    type="text"
-                    placeholder="What is your name?"
-                />
-            <input id="login-btn" type="submit" value="Log In"/>
+            <div id="city-container">
+                <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" />
+                <span id="city"></span>
             </div>
-        </form>
+        </div>
+        <div id="todo-container" class="hidden">
+            <span id="todo-title">Todos of the day 📅</span>
+            <form id="todo-form">
+                <input type="text" required placeholder="Write a To Do and Press Enter"/>
+            </form>
+            <ul id="todo-list"></ul>
+        </div>
     </div>
-    <h1 id="greeting" class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="Write a To Do and Press Enter"/>
-    </form>
-    <ul id="todo-list"></ul>
     
     <script src="./src/javascript/background.js"></script>
     <script src="./src/javascript/clock.js"></script>

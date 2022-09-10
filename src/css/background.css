@@ -1,0 +1,44 @@
+#image-container{
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 0 88px 5px rgba(255, 255, 255, 0.95);
+    position: relative;
+    width: 700px;
+    height: 500px;
+    margin: 0 10px;
+}
+
+#bk-image{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#greeting{
+    position: absolute;
+    
+    bottom: 5%;
+    left: 5%;
+    font-size: 60px;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+#refresh_btn{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    padding: 0;
+    border: none;
+    background: none;
+    
+}
+
+#refresh_btn img{
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    
+    filter: invert(1) drop-shadow( 2px 2px 2px black);
+}

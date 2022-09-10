@@ -18,7 +18,8 @@ function saveToDos(){
 }
 
 function deleteToDo(event){
-    const li = event.target.parentElement;
+    const li = event.target.parentElement.parentElement;
+    console.log(li)
     li.remove();
     toDos = toDos.filter((toDo)=> toDo.id !== parseInt(li.id))
     saveToDos();
@@ -28,11 +29,16 @@ function paintToDo(newTodoObj){
     const li = document.createElement('li');
     const span = document.createElement('span');
     const button = document.createElement('button');
+    const button_img = document.createElement('img');
     
     li.id = newTodoObj.id;
     span.innerText = newTodoObj.text;
-    button.innerText = "❌";
+    
+    button.className = 'del_btn'
+    button_img.src = 'https://cdn-icons-png.flaticon.com/512/6861/6861362.png'
+    button.appendChild(button_img);
     button.addEventListener('click', deleteToDo);
+
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);

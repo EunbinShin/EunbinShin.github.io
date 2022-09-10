@@ -1,38 +1,38 @@
-#login-container{
-    top: 50%;
-    position: absolute;
-}
-
 #login-form div:first-child{
-    width: 300px;
-    height: 200px;
+    width: 75%;
+    height: 400px;
     padding: 60px 30px 50px 30px;
     margin: auto;
     border: 1px solid #FEFEFE;
-    border-radius: 15px;
+    border-radius: 30px;
     backdrop-filter: blur(10px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     box-shadow: 0 10px 35px 0 gray;
 }
 
 #login-form div:first-child span{
-    font-size: 1.5rem;
+    display: block;
+    font-size: 3.5rem;
     font-weight: 200;
     margin-bottom: 40px;
+    text-align: center;
     color: #FEFEFE;
 }
 
 #login-input{
     border: 1px solid #FEFEFE;
+    background-color: rgba(255,255,255,0.2);
     border-radius: 3px;
     box-sizing: border-box;
     display: block;
-    font-size: 1rem;
+    font-size: 2rem;
     letter-spacing: 0.15rem;
     padding: 10px;
-    width: 100%;
+    width: 90%;
+    margin: 30px auto 15px auto;
+}
+
+#login-input::placeholder{
+    color: #FEFEFE
 }
 
 #login-input:focus{
@@ -46,11 +46,13 @@
 }
 
 #login-btn{
+    display: block;
     width: 30%;
     border: 1px solid wheat;
-    margin: 15px auto 0px auto;
+    margin: 45px auto 0px auto;
     padding: 8px 20px;
-    border-radius: 3px;
+    border-radius: 5px;
+    font-size: 1.5rem;
 }
 
 #login-btn:hover{

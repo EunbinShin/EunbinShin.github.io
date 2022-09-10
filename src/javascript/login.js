@@ -1,14 +1,18 @@
 const loginContainer = document.querySelector("#login-container")
 const loginForm = document.querySelector('#login-form');
 const loginInput = document.querySelector('#login-input');
+const todos = document.querySelector('#todo-container');
+const imageContainer = document.querySelector('#image-container');
 const greeting = document.querySelector('#greeting');
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function paintGreetings(username){
-    greeting.innerText = `Welcome ${username}`
+    greeting.innerHTML = `Welcome ${username}<br/>Enjoy My Page`
     greeting.classList.remove(HIDDEN_CLASSNAME);
+    imageContainer.classList.remove(HIDDEN_CLASSNAME);
+    todos.classList.remove(HIDDEN_CLASSNAME);
 }
 
 function onLoginSubmit(event){
