@@ -4,7 +4,7 @@ const chosenImage = images[Math.floor(Math.random() * images.length)];
 const backgroundImage = document.querySelector('#bk-image');
 const refreshButton = document.querySelector('#refresh_btn');
 
-backgroundImage.src = `../src/image/${chosenImage}`
+backgroundImage.src = `./src/image/${chosenImage}`
 
 function refreshPage(){
     window.location.reload();
