@@ -7,6 +7,7 @@
     <title>My First Vanilla JS App 😉</title>
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="stylesheet" href="./src/css/clock.css">
+    <link rel="stylesheet" href="./src/css/login.css">
 </head>
 <body>
     <div id="geolocation-container"> 
@@ -27,15 +28,21 @@
             <span id="city"></span>
         </div>
     </div>
-    <form id="login-form" class="hidden">
-        <input 
-            required
-            maxlength="15"
-            type="text"
-            placeholder="What is your name?"
-        />
-        <input type="submit" value="Log In"/>
-    </form>
+    <div id="login-container" class="hidden">
+        <form id="login-form">
+            <div>
+                <span>Hi,<br/> I want know You</span>
+                <input 
+                    id="login-input"
+                    required
+                    maxlength="15"
+                    type="text"
+                    placeholder="What is your name?"
+                />
+            <input id="login-btn" type="submit" value="Log In"/>
+            </div>
+        </form>
+    </div>
     <h1 id="greeting" class="hidden"></h1>
     <form id="todo-form">
         <input type="text" placeholder="Write a To Do and Press Enter"/>
