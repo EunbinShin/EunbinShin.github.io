@@ -18,11 +18,10 @@
 }
 
 #clock{
-    font-size: 6em;
+    font-size: 4em;
     height: 80px;
     line-height: 80px;
-    width: 350px;
-    
+    width: 250px;
     color: white;
     text-shadow: 2px 2px 2px black;
     font-weight: bold;
@@ -52,10 +51,10 @@
     
     align-self: flex-start;
     
-    margin-left: 10px;
+    margin-left: 5px;
 }
 #city-container{
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 #city-container img{

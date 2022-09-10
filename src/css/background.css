@@ -3,9 +3,9 @@
     overflow: hidden;
     box-shadow: 0 0 88px 5px rgba(255, 255, 255, 0.95);
     position: relative;
-    width: 700px;
-    height: 500px;
-    margin: 0 10px;
+    width: 90%;
+    height: 350px;
+    margin: 0 auto;
 }
 
 #bk-image{
@@ -19,7 +19,7 @@
     
     bottom: 5%;
     left: 5%;
-    font-size: 60px;
+    font-size: 48px;
     font-weight: bolder;
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -36,7 +36,7 @@
 }
 
 #refresh_btn img{
-    width: 60px;
+    width: 30px;
     height: auto;
     object-fit: contain;
     
