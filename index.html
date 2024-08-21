@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>음력 <-> 양력 변환기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>음력 <-> 양력 변환기</h1>
+
+    <label for="date">날짜 선택:</label>
+    <input type="date" id="date">
+
+    <button onclick="convertToLunar()">양력을 음력으로 변환</button>
+    <button onclick="convertToSolar()">음력을 양력으로 변환</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
