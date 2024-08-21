@@ -1,57 +1,57 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #f8f9fa;
 }
 
 .container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 0 15px; /* 모바일에서 좌우 여백 추가 */
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    border-radius: 10px;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 20px;
+    font-size: 1.5rem; /* 모바일 환경에서 타이틀 크기 줄임 */
 }
 
-label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    display: block;
-}
-
-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input[type="date"] {
+    font-size: 1rem; /* 날짜 입력 필드 텍스트 크기 조정 */
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #45a049;
+    font-size: 1rem; /* 버튼의 텍스트 크기 조정 */
 }
 
 .result {
-    margin-top: 20px;
     font-weight: bold;
-    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 20px;
+}
+
+/* 미디어 쿼리로 작은 화면에서 레이아웃과 크기를 조정 */
+@media (max-width: 768px) {
+    .card {
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    input[type="date"],
+    button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .result {
+        font-size: 1rem;
+    }
 }
